@@ -5,7 +5,7 @@ const getGalleryRef = document.querySelector('.gallery');
 const listGalleryMarkup = galleryItems
   .map(
     ({ preview, description, original }) =>
-      /*html*/ ` <a class='gallery__item' href='${original}' ><img class='gallery__image' src='${preview}' alt='${description}' title="${description}"> </a> `
+      /*html*/ ` <li><a class='gallery__item' href='${original}' ><img class='gallery__image' src='${preview}' alt='${description}' title="${description}"> </a></li> `
   )
   .join('');
 
