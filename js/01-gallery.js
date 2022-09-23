@@ -1,7 +1,6 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-
 // зарендерить разметку с имейджами з обьекта +
 //  повесить слущатель собитий на див галери  +
 // при нажатии на фото открьівать модалку с большим фото из обьекта  +
@@ -50,7 +49,7 @@ function openBigImageWithModal(e) {
   closeBigImageKeyEsc(instance);
 }
 function closeBigImageKeyEsc(instance) {
-  getGalleryRef.addEventListener('keydown', e => {
+  window.addEventListener('keydown', e => {
     const isKeyEscape = e.key === 'Escape';
     if (isKeyEscape) {
       instance.close();
