@@ -53,6 +53,7 @@ function closeBigImageKeyEsc(instance) {
     const isKeyEscape = e.key === 'Escape';
     if (isKeyEscape) {
       instance.close();
+      window.removeEventListener();
     }
   });
 }
